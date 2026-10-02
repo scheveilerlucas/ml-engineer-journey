@@ -18,3 +18,21 @@ motorcycles.append('suzuki')
 motorcycles = ["honda", "yamaha", "suzuki"]
 motorcycles.insert(1, "ducati")
 print(motorcycles)
+
+# Deleting Elements
+
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+del motorcycles[0]
+print(motorcycles)
+
+# Removing an Item Using the pop() Method
+motorcycles = ['honda', 'yamaha', 'suzuki']
+print(motorcycles)
+popped_motorcycle = motorcycles.pop()
+print(motorcycles)
+print(popped_motorcycle)
+
+# Finding the Length of a List
+cars = ['bmw', 'audi', 'toyota', 'subaru']
+len(cars)
