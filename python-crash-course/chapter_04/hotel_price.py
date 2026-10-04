@@ -11,20 +11,20 @@ print(total / len(prices))
 
 copy_prices = sorted(prices[:])
 print(copy_prices)
-print(sum(prices[4] + prices[5]))
+print(prices[4] + prices[5])
 
-total_price = 0
+sum_squared_deviations = 0
 moyenne = sum(prices) / len(prices)
 for price in prices:
-    total_price = total_price +(price - moyenne) ** 2 
+    sum_squared_deviations = sum_squared_deviations +(price - moyenne) ** 2 
 
-print(total_price)
+print(sum_squared_deviations)
 
-variance = total_price / len(prices)
+variance = sum_squared_deviations / len(prices)
 ecart_type = variance ** 0.5
-ecart_type_arrondis = round(ecart_type,2)
+ecart_type_arrondi = round(ecart_type, 2)
 
-print(f"L'écart type est de {ecart_type_arrondis}")
+print(f"L'écart-type est de {ecart_type_arrondi}")
 print(f"La variance est de {variance}")
 
 
