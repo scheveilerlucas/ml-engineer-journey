@@ -9,7 +9,7 @@ for price in prices:
 print(total / len(prices))
 
 
-copy_prices = sorted(prices[:])
+copy_prices = sorted(prices)
 print(copy_prices)
 print(prices[4] + prices[5])
 
